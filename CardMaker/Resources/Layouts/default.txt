@@ -1,0 +1,13 @@
+﻿BasePart
+BasePath:assetBase
+
+NewPart
+column:Name attributeType:text positionx:50 positiony:50
+
+NewPart
+column:Cost attributeType:composite positionx:50 positiony:50
+"{U}" refers:assetPathU
+"{R}" refers:assetPathR
+Number refers:assetEmpty write:value center
+elementSizeX:15 elementSizeY:15
+

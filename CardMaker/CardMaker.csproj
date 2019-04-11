@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12470705-0E5E-43B3-8F01-7D37774FC6B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CardMaker</RootNamespace>
+    <AssemblyName>CardMaker</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\cardParts\style" />
+    <None Include="Resources\cardPartsExtended\style" />
+    <None Include="Resources\Cards\cards.csv" />
+    <None Include="Resources\roundSymbols\symbol-font" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cardParts\acard.jpg" />
+    <Content Include="Resources\cardParts\apt.jpg" />
+    <Content Include="Resources\cardParts\artifact_blend_card.png" />
+    <Content Include="Resources\cardParts\artifact_blend_pt.png" />
+    <Content Include="Resources\cardParts\bacard.jpg" />
+    <Content Include="Resources\cardParts\bapt.jpg" />
+    <Content Include="Resources\cardParts\bcard.jpg" />
+    <Content Include="Resources\cardParts\blcard.jpg" />
+    <Content Include="Resources\cardParts\blpt.jpg" />
+    <Content Include="Resources\cardParts\border-mask.png" />
+    <Content Include="Resources\cardParts\bpt.jpg" />
+    <Content Include="Resources\cardParts\card-sample.png" />
+    <Content Include="Resources\cardParts\ccard.jpg" />
+    <Content Include="Resources\cardParts\clcard.jpg" />
+    <Content Include="Resources\cardParts\clpt.jpg" />
+    <Content Include="Resources\cardParts\cpt.jpg" />
+    <Content Include="Resources\cardParts\gcard.jpg" />
+    <Content Include="Resources\cardParts\glcard.jpg" />
+    <Content Include="Resources\cardParts\glpt.jpg" />
+    <Content Include="Resources\cardParts\gpt.jpg" />
+    <Content Include="Resources\cardParts\hybrid_blend_card.png" />
+    <Content Include="Resources\cardParts\hybrid_blend_pt.png" />
+    <Content Include="Resources\cardParts\imagemask_extended.png" />
+    <Content Include="Resources\cardParts\imagemask_standard.png" />
+    <Content Include="Resources\cardParts\mcard.jpg" />
+    <Content Include="Resources\cardParts\mlcard.jpg" />
+    <Content Include="Resources\cardParts\mlpt.jpg" />
+    <Content Include="Resources\cardParts\mpt.jpg" />
+    <Content Include="Resources\cardParts\multicolor_blend_card.png" />
+    <Content Include="Resources\cardParts\multicolor_blend_pt.png" />
+    <Content Include="Resources\cardParts\oacard.jpg" />
+    <Content Include="Resources\cardParts\oapt.jpg" />
+    <Content Include="Resources\cardParts\omcard.jpg" />
+    <Content Include="Resources\cardParts\omlcard.jpg" />
+    <Content Include="Resources\cardParts\omlpt.jpg" />
+    <Content Include="Resources\cardParts\ompt.jpg" />
+    <Content Include="Resources\cardParts\ptmask.png" />
+    <Content Include="Resources\cardParts\rcard.jpg" />
+    <Content Include="Resources\cardParts\rlcard.jpg" />
+    <Content Include="Resources\cardParts\rlpt.jpg" />
+    <Content Include="Resources\cardParts\rpt.jpg" />
+    <Content Include="Resources\cardParts\tombstone.png" />
+    <Content Include="Resources\cardParts\ucard.jpg" />
+    <Content Include="Resources\cardParts\ulcard.jpg" />
+    <Content Include="Resources\cardParts\ulpt.jpg" />
+    <Content Include="Resources\cardParts\upt.jpg" />
+    <Content Include="Resources\cardParts\wcard.jpg" />
+    <Content Include="Resources\cardParts\wlcard.jpg" />
+    <Content Include="Resources\cardParts\wlpt.jpg" />
+    <Content Include="Resources\cardParts\wpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\acard.jpg" />
+    <Content Include="Resources\cardPartsExtended\apt.jpg" />
+    <Content Include="Resources\cardPartsExtended\artifact_blend_card.png" />
+    <Content Include="Resources\cardPartsExtended\artifact_blend_pt.png" />
+    <Content Include="Resources\cardPartsExtended\bcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\blcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\blpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\bpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\card-sample.png" />
+    <Content Include="Resources\cardPartsExtended\ccard.jpg" />
+    <Content Include="Resources\cardPartsExtended\clcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\clpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\cpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\gcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\glcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\glpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\gpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\hpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\hybrid_blend_card.png" />
+    <Content Include="Resources\cardPartsExtended\hybrid_blend_pt.png" />
+    <Content Include="Resources\cardPartsExtended\mask_pt.png" />
+    <Content Include="Resources\cardPartsExtended\mcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\mlcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\mlpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\mpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\multicolor_blend_card.png" />
+    <Content Include="Resources\cardPartsExtended\multicolor_blend_pt.png" />
+    <Content Include="Resources\cardPartsExtended\oacard.jpg" />
+    <Content Include="Resources\cardPartsExtended\oapt.jpg" />
+    <Content Include="Resources\cardPartsExtended\omcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\omlcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\omlpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\ompt.jpg" />
+    <Content Include="Resources\cardPartsExtended\rcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\rlcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\rlpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\rpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\tombstone.png" />
+    <Content Include="Resources\cardPartsExtended\ucard.jpg" />
+    <Content Include="Resources\cardPartsExtended\ulcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\ulpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\upt.jpg" />
+    <Content Include="Resources\cardPartsExtended\wcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\wlcard.jpg" />
+    <Content Include="Resources\cardPartsExtended\wlpt.jpg" />
+    <Content Include="Resources\cardPartsExtended\wpt.jpg" />
+    <Content Include="Resources\roundSymbols\mana_1_half.png" />
+    <Content Include="Resources\roundSymbols\mana_b.png" />
+    <Content Include="Resources\roundSymbols\mana_bg.png" />
+    <Content Include="Resources\roundSymbols\mana_bgw.png" />
+    <Content Include="Resources\roundSymbols\mana_br.png" />
+    <Content Include="Resources\roundSymbols\mana_brg.png" />
+    <Content Include="Resources\roundSymbols\mana_b_half.png" />
+    <Content Include="Resources\roundSymbols\mana_chaos.png" />
+    <Content Include="Resources\roundSymbols\mana_circle.png" />
+    <Content Include="Resources\roundSymbols\mana_g.png" />
+    <Content Include="Resources\roundSymbols\mana_gu.png" />
+    <Content Include="Resources\roundSymbols\mana_gub.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_bg.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_br.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_gu.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_gw.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_rg.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_rw.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_ub.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_ur.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_wb.png" />
+    <Content Include="Resources\roundSymbols\mana_guild_wu.png" />
+    <Content Include="Resources\roundSymbols\mana_gw.png" />
+    <Content Include="Resources\roundSymbols\mana_gwu.png" />
+    <Content Include="Resources\roundSymbols\mana_g_half.png" />
+    <Content Include="Resources\roundSymbols\mana_infinite.png" />
+    <Content Include="Resources\roundSymbols\mana_nb.png" />
+    <Content Include="Resources\roundSymbols\mana_ng.png" />
+    <Content Include="Resources\roundSymbols\mana_nr.png" />
+    <Content Include="Resources\roundSymbols\mana_nu.png" />
+    <Content Include="Resources\roundSymbols\mana_nw.png" />
+    <Content Include="Resources\roundSymbols\mana_q.png" />
+    <Content Include="Resources\roundSymbols\mana_q_old.png" />
+    <Content Include="Resources\roundSymbols\mana_q_older.png" />
+    <Content Include="Resources\roundSymbols\mana_r.png" />
+    <Content Include="Resources\roundSymbols\mana_rg.png" />
+    <Content Include="Resources\roundSymbols\mana_rgw.png" />
+    <Content Include="Resources\roundSymbols\mana_rw.png" />
+    <Content Include="Resources\roundSymbols\mana_rwu.png" />
+    <Content Include="Resources\roundSymbols\mana_r_half.png" />
+    <Content Include="Resources\roundSymbols\mana_s.png" />
+    <Content Include="Resources\roundSymbols\mana_s_half.png" />
+    <Content Include="Resources\roundSymbols\mana_t.png" />
+    <Content Include="Resources\roundSymbols\mana_t_old.png" />
+    <Content Include="Resources\roundSymbols\mana_t_older.png" />
+    <Content Include="Resources\roundSymbols\mana_u.png" />
+    <Content Include="Resources\roundSymbols\mana_ub.png" />
+    <Content Include="Resources\roundSymbols\mana_ubr.png" />
+    <Content Include="Resources\roundSymbols\mana_ur.png" />
+    <Content Include="Resources\roundSymbols\mana_urg.png" />
+    <Content Include="Resources\roundSymbols\mana_u_half.png" />
+    <Content Include="Resources\roundSymbols\mana_w.png" />
+    <Content Include="Resources\roundSymbols\mana_wb.png" />
+    <Content Include="Resources\roundSymbols\mana_wbr.png" />
+    <Content Include="Resources\roundSymbols\mana_wu.png" />
+    <Content Include="Resources\roundSymbols\mana_wub.png" />
+    <Content Include="Resources\roundSymbols\mana_w_half.png" />
+    <Content Include="Resources\roundSymbols\mana_x.png" />
+    <Content Include="Resources\roundSymbols\mana_y.png" />
+    <Content Include="Resources\roundSymbols\mana_z.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

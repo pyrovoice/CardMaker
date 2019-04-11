@@ -1,0 +1,10 @@
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.csprojAssemblyReference.cache
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.Form1.resources
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.Properties.Resources.resources
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.csproj.GenerateResource.cache
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.csproj.CoreCompileInputs.cache
+C:\Users\maxim\source\repos\CardMaker\CardMaker\bin\Debug\CardMaker.exe.config
+C:\Users\maxim\source\repos\CardMaker\CardMaker\bin\Debug\CardMaker.exe
+C:\Users\maxim\source\repos\CardMaker\CardMaker\bin\Debug\CardMaker.pdb
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.exe
+C:\Users\maxim\source\repos\CardMaker\CardMaker\obj\Debug\CardMaker.pdb
