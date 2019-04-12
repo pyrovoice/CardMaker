@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Net;
 
 namespace CardMaker
 {
@@ -28,6 +29,11 @@ namespace CardMaker
         private static int CARD_STATTEXT_Y = 895;
         private static int CARD_TYPE_X = 30;
         private static int CARD_TYPE_Y = 565;
+        private static int CARD_ARTBEGIN_X = 28;
+        private static int CARD_ARTBEGIN_Y = 87;
+        private static int CARD_ARTEND_X = 630;
+        private static int CARD_ARTEND_Y = 460;
+
 
         public Form1()
         {
@@ -124,6 +130,16 @@ namespace CardMaker
             Helper.DrawText(source1, c.Text, Helper.getFont("MPlantin", 34, FontStyle.Regular), CARD_ABILITIES_X, CARD_ABILITIES_Y, 600);
             //Draw Mana cost
             DrawManaCost(source1, c);
+            //Get and draw art
+            if (!String.IsNullOrEmpty(c.ArtPath))
+            {
+                using (WebClient client = new WebClient())
+                {
+                    Stream stream = client.OpenRead(c.ArtPath);
+                    Bitmap bitmap = new Bitmap(stream);
+                    graphics.DrawImage(bitmap, CARD_ARTBEGIN_X, CARD_ARTBEGIN_Y, CARD_ARTEND_X, CARD_ARTEND_Y);
+                }
+            }
 
             String directoryPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + "\\CardMaker";
             if (!System.IO.Directory.Exists(directoryPath))

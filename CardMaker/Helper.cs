@@ -9,37 +9,21 @@ using System.Threading.Tasks;
 
 namespace CardMaker
 {
-    enum ColorIdentity { MULTICOLORE, BLUE, RED, COLORLESS }
+    
 
     class Helper
     {
         private static string pathToResource = "C:\\Users\\maxim\\source\\repos\\CardMaker\\CardMaker\\Resources\\cardParts\\";
-        public static ColorIdentity getCardColorIdentity(Card c)
-        {
-            if (c.ManaCostBlue > 0 && c.ManaCostRed > 0)
-            {
-                return ColorIdentity.MULTICOLORE;
-            }
-            if (c.ManaCostBlue > 0)
-            {
-                return ColorIdentity.BLUE;
-            }
-            if (c.ManaCostRed > 0)
-            {
-                return ColorIdentity.RED;
-            }
-            return ColorIdentity.COLORLESS;
-        }
+        
 
         public static string getCardBase(Card c)
         {
-            ColorIdentity color = getCardColorIdentity(c);
             string extension = null;
             if (c.Type.Contains("Land"))
             {
-                switch (color)
+                switch (c.getCardColorIdentity())
                 {
-                    case ColorIdentity.MULTICOLORE:
+                    case ColorIdentity.UR:
                         extension = "omlcard.jpg";
                         break;
                     case ColorIdentity.BLUE:
@@ -55,9 +39,9 @@ namespace CardMaker
             }
             else
             {
-                switch (color)
+                switch (c.getCardColorIdentity())
                 {
-                    case ColorIdentity.MULTICOLORE:
+                    case ColorIdentity.UR:
                         extension = "urcard.png";
                         break;
                     case ColorIdentity.BLUE:
@@ -138,9 +122,8 @@ namespace CardMaker
             {
                 return null;
             }
-            ColorIdentity color = getCardColorIdentity(c);
             string extension = null;
-            switch (color)
+            switch (c.getCardColorIdentity())
             {
                 case ColorIdentity.MULTICOLORE:
                     extension = "mpt.png";

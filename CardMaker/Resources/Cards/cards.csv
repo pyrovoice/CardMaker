@@ -1,2 +1,21 @@
 Name;Cost;Type;Subtype;Text;Stats;Art
-Sheet2;u;test;;test;;
+Vacuum;2;Spell;;Exile a card from your hand or graveyard.\nExile this.;;
+Pouncing Lynx;1R;Creature;Cat;Haste, Trample;3/1;
+Bolt;1R;Fast Spell;Fire;Deal 2 damage to any target. If a creature that was dealt damage by this dies this turn, bury it.\nDraw a card.;;https://carwad.net/sites/default/files/lightning-bolt-art-132705-9956469.jpg 
+Ember Beast;2R;Creature;Beast;When you buy this, upgrade a resource in play or in your graveyard.\nThis cannot attack alone.;4/4;
+Glacial Orb;2U;Constant;;Tax {1}, Resistant\n{t}: Tap any target unless his control pays {2}.;;
+Chandra, Fire Artisan;4RR;Legendary Planeswalker;Chandra;Whenever one or more charges are removed from Chandra, Fire Artisan, she deals that much damage to target opponent or planeswalker.\n+1Draw a card and gain {r};4;
+Always ready;R;Fast Spell;;Untap target creature you control.;;
+Spark;R;Spell;Fire;Deal 1 damage to any target.\nGain {r}.;;
+Jace, Mind Artisan;4UU;Legendary Planeswalker;Jace;Whenever a creature attacks you or a permanent you control, it gains -1/-0 until end of turn.\n+1: Return a spell that costs 2 or less from your graveyard to your hand.;4;
+Shroud of a cold day;2U;Fast Spell;;Choose two:\n- Creatures target opponent control gain -1/-0 until end of turn.\n- Target creature gains -3/-0 until end of turn.\n- Draw a card.;;
+Wall of Ice;1UU;Creature;Wall;Defender\nWhen a creature deals damage to this, that creature cannot untap this turn.;0/6;
+Tinkerer;1R;Creature;Human Artisan;Storage\nWhen this enters play or dies, put a colorless 1/1 Thopter creature with flying into play.;2/1;
+Firemane Mare;R;Creature;Beast;Tax {1}{r}, Haste\nWhen this dies, wou may bury it.;3/1;
+Strategize;1U;Spell;;Tax {1}\nDraw 2 cards.;;
+;3;Constant;Resource;Storage\nAt the beginning of turn, add a mana of any color.;;
+Ice cage;1U;spell;Ice;Tap target creature. When that creature is dealt damage this turn, destroy it.\nGain {u}.;;
+Turn to frog;1U;Constant;Metamorphose;"Tax {1}\nEnchant creature\nEnchanted creature is a 0/1 blue frog with """"Storage""""";;
+Skywhale;4U;Creature;Whale;Tax {1u}, Flying, Hexproof {2}\nWhen this deals damage to the opposing player, you may return it to your hand.;5/3;
+Lavamolten Upgrader;2R;Fast Creature;Dwarf Artisan;Storage\nWhen this enters play, target constant becomes a 5/2 Constant-creature with Haste until end of turn.\nSacrifice this: Untap target Constant.;1/2;
+Gaya's Elve;1G;Creature;Elf Warrior;Once per turn, if you would add {g}, you add {gg} instead.;1/1;https://preview.redd.it/9qaghhkdvir21.jpg?width=1024&auto=webp&s=1ec03d04195897817e156c2f1fd09f1478549cc0 
